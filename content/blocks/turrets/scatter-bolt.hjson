@@ -1,31 +1,52 @@
 type: ItemTurret
 name: Scatter Bolt
-description: Small but effective early-game turret that fires scattered shots
-health: 320
+description: Small but effective early-game turret that fires rapid scattered shots. Each projectile can ricochet off targets.
+health: 380
 size: 1
-reload: 20
-range: 120
-inaccuracy: 8
+reload: 15
+range: 140
+inaccuracy: 6
 shots: 3
+spread: 10
+recoil: 0.5
+shootSound: shootSnap
+
 ammoTypes: {
   copper: {
-    damage: 8
-    speed: 3
-    lifetime: 40
+    damage: 9
+    speed: 3.5
+    lifetime: 45
     width: 5
     height: 7
+    pierce: true
+    pierceCap: 2
+    buildingDamageMultiplier: 0.8
   }
   lead: {
-    damage: 12
-    speed: 3.5
-    lifetime: 40
+    damage: 13
+    speed: 4
+    lifetime: 45
     width: 6
     height: 8
+    knockback: 0.5
+    status: slow
+    statusDuration: 30
+  }
+  graphite: {
+    damage: 16
+    speed: 4.5
+    lifetime: 50
+    width: 6
+    height: 9
+    splashDamage: 10
+    splashDamageRadius: 12
   }
 }
+
 requirements: [
-  copper/30
-  lead/15
+  copper/35
+  lead/25
 ]
+
 category: turret
 research: duo
