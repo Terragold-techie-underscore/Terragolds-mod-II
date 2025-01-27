@@ -9,7 +9,7 @@ inaccuracy: 6
 shots: 3
 spread: 10
 recoil: 0.5
-shootSound: shootSnap
+shootSound: blaster
 
 ammoTypes: {
   copper: {
