@@ -1,0 +1,10 @@
+type: material
+name: Onoxide
+description: "A highly toxic material that absorbs all light, appearing pitch black. Handle with extreme caution."
+color: 1f1f1f
+flammability: 0
+explosiveness: 0.2
+radioactivity: 0.8
+charge: 0.1
+hardness: 3
+cost: 2
