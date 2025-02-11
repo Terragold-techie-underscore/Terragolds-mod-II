@@ -1,0 +1,31 @@
+type: GenericCrafter
+name: Onoxide Pressure Chamber
+description: "Compresses materials under extreme pressure while submerged in water, creating a light-absorbing substance through molecular collapse."
+health: 850
+size: 3
+hasItems: true
+craftTime: 180
+consumes: {
+  power: 12.5
+  items: {
+    items: [
+      thorium/3
+      titanium/5
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.8
+  }
+}
+requirements: [
+  surge-alloy/45
+  phase-fabric/25
+  plastanium/80
+  thorium/120
+]
+category: crafting
+research: phase-weaver
+outputItem: onoxide/1
+ambientSound: pulse
+ambientSoundVolume: 0.5
